@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Маньяк крови2005 </title>
+    <style>
+        /* Основные сбросы и фон */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(-45deg, #0f0c29, #302b63, #24243e, #111);
+            background-size: 400% 400%;
+            animation: gradientBG 12s ease infinite;
+            color: #fff;
+            padding: 20px;
+        }
+
+        /* Анимация переливающегося фона */
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Карточка био */
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 24px;
+            padding: 40px 30px;
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Аватарка */
+        .avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid rgba(255, 255, 255, 0.2);
+            margin-bottom: 15px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+        }
+
+        /* Никнейм и био */
+        h1 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+            letter-spacing: 1px;
+        }
+
+        p.bio {
+            font-size: 0.95rem;
+            color: #aaa;
+            margin-bottom: 25px;
+            line-height: 1.4;
+        }
+
+        /* Кнопки ссылок */
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .link-btn {
+            display: block;
+            padding: 14px 20px;
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 12px;
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .link-btn:hover {
+            background: rgba(255, 255, 255, 0.2);
+            border-color: rgba(255, 255, 255, 0.4);
+            transform: scale(1.02);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Тег дискорда */
+        .discord-tag {
+            margin-top: 25px;
+            padding: 8px 12px;
+            background: rgba(88, 101, 242, 0.2);
+            border: 1px solid rgba(88, 101, 242, 0.4);
+            border-radius: 20px;
+            display: inline-block;
+            font-size: 0.85rem;
+            color: #5865F2;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <!-- Твоя аватарка (вставь прямую ссылку на картинку) -->
+        <img src="https://via.placeholder.com/150" alt="Avatar" class="avatar">
+
+        <!-- Твой ник -->
+        <h1>Маняьк крови2005</h1>
+
+        <!-- Краткое био -->
+        <p class="bio">Я КРУТОЙ<br>Welcome to my page ✦</p>
+
+        <!-- Твои ссылки -->
+        <div class="links">
+            <a href="https://t.me/your_username" target="_blank" class="link-btn">Telegram</a>
+            <a href="https://steamcommunity.com" target="_blank" class="link-btn">Steam Profile</a>
+            <a href="https://twitch.tv" target="_blank" class="link-btn">Twitch</a>
+            <a href="https://github.com" target="_blank" class="link-btn">GitHub</a>
+        </div>
+
+        <!-- Дискорд тег -->
+        <div class="discord-tag">
+            по вопросам пешите сюда @mydodir
+        </div>
+    </div>
+
+</body>
+</html>
